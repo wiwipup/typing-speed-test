@@ -1,10 +1,5 @@
 @font-face {
     font-family: 'Sora';
-    src: url(fonts/Sora-VariableFont_wght.ttf) format(truetype);
-}
-
-@font-face {
-    font-family: 'Sora';
     src: url(fonts/Sora-Regular.ttf) format(truetype);
     font-weight: 400;
 }
@@ -139,6 +134,24 @@ main {
 .btn_act {
     color: hsl(210, 100%, 65%);
     border-color: hsl(210, 100%, 65%);
+}
+
+.btn:focus,
+.btn_act:focus,
+.btn_start:focus {
+    outline: none;
+}
+
+.btn:focus-visible,
+.btn_act:focus-visible {
+    outline: 2px solid hsl(210, 100%, 65%);
+    outline-offset: 2px;
+}
+
+
+.btn_start:focus-visible {
+    outline: 2px solid hsl(210, 100%, 65%);
+    outline-offset: 3px;
 }
 
 .divider {
